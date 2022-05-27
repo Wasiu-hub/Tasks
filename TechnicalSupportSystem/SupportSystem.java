@@ -39,14 +39,14 @@ public class SupportSystem
         printWelcome();
 
         while(!finished) {
-            String input = reader.getInput();
+            HashSet<String> input = reader.getInput();
 
             // if(input.contains("bye")) {
                 // finished = true;
             // }
             // best is: input.strip().toLowerCase().contains("bye");
             //input.strip().equalsIgnoreCase("bye")
-            if(input.startsWith("bye")) { //or input.strip().toLowercase().equals("bye");
+            if(input.contains("bye")) { //or input.strip().toLowercase().equals("bye");
                 finished = true;
             }
             else {

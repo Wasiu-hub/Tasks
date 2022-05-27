@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.HashSet;
+
 /**
  * Write a description of class InputReader here.
  *
@@ -26,9 +28,20 @@ public class InputReader
      *          words typed by the user
      */
     
-    public String getInput(){ 
+    public HashSet<String> getInput(){ 
+        
         System.out.println("> "); // print input
-        String inputLine = reader.nextLine();
-        return inputLine;
+        String inputLine = reader.nextLine().trim().toLowerCase();
+        
+        // Task 1: Split the user input into words
+        String[] w = inputLine.split(" ");
+        
+        HashSet<String> words = new HashSet<>(); // words converted to set
+        // Task 2: Add words from input to hashSet
+        // words.addAll(w);
+        for(String word : w){
+            words.add(word);
+        }
+        return words;
     }
 }
