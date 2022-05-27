@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.HashSet;
-
 /**
  * Write a description of class InputReader here.
  *
