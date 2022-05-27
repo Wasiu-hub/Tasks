@@ -8,18 +8,18 @@ import java.util.HashMap;
  */
 public class PhoneBook
 {
-    private HashMap<String, String> numbers;
+    private HashMap<String, Person> numbers;
 
     public PhoneBook() {
-        numbers = new HashMap<String, String>();
+        numbers = new HashMap<String, Person>();
     }
 
-    public void saveNumber(String name,String number) {
+    public void saveNumber(String name,Person p) {
         // numbers.put(name, number);
-        numbers.put(name.toLowerCase(), number);
+        numbers.put(name.toLowerCase(), p);
     }
 
-    public String lookupNumber(String name) {
+    public Person lookupNumber(String name) {
         //return numbers.get(name);
         return numbers.get(name.toLowerCase());
     }
