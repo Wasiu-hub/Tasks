@@ -43,7 +43,7 @@ class GameController {
         printGoodByeMessage();
     }
 
-    public void printInstruction() {
+    private void printInstruction() {
         System.out.println("Welcome to our guessing game");
         System.out.println("You need to guess our secret number");
         System.out.println("Good luck");
